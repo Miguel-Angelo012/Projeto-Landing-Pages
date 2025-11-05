@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contatos</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/iflogo.png">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="titulo">Contatos</h1>
+            <nav>
+                <a class="inicio" href="../index.html"><button class="box">Início</button></a>
+                <a class="sobre" href="sobre.html"><button class="box">Sobre</button></a>
+                <a class="formacao" href="formacao.html"><button class="box">Formação</button></a>
+                <a class="disciplina" href="disciplina.html"><button class="box">Disciplina</button></a>
+                <a class="contatos" href="contatos.html"><button class="box">Contatos</button></a>
+            </nav>
+        </header>
+
+        <div class="formulario">
+            <h1>Formulário de Contato</h1>
+            <form action="/enviar_dados" method="post">
+                
+                <label for="nome">Nome:</label>
+                <input class="input" type="text"  id="nome" name="nome" required><br><br>
+
+                <label for="mail">Email:</label>
+                <input class="input" type="email" id="mail" name="mail" required><br><br>
+
+                <label for="assunto">Assunto:</label><br>
+                <select class="input botao" id="assunto" name="assunto">
+                    <option value="">-</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="suporte">Suporte</option>
+                </select><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea class="input" id="mensagem" name="mensagem" rows="10" cols="87"></textarea><br><br>
+                
+                <input class="input botao" type="submit" id="enviar">
+                <input class="input botao" type="reset" id="redefinir">
+            </form>
+        </div>
+        <footer>
+                <p>© 2025 Curriculo Landing Page IFCE | criado por miguellima11@aluno.ifce.edu.br e rute.nascimento63@aluno.ifce.edu.br</p>
+        </footer>
+    </body>
+</html>
